@@ -24,7 +24,12 @@ msgstr ""
 
 #. Text in function
 #: espn-headlines-widget/espn-headlines-widget.php:1
-msgid "ESPN headlines by sport and team"
+msgid "ESPN headlines by sports and league"
+msgstr ""
+
+#. Text in echo
+#: espn-headlines-widget/views/admin.php:105
+msgid "In order to use the ESPN API you must agree to their "
 msgstr ""
 
 #. Text in echo
@@ -60,4 +65,9 @@ msgstr ""
 #. Text in echo
 #: espn-headlines-widget/views/admin.php:50
 msgid "Type:"
+msgstr ""
+
+#. Text in echo
+#: espn-headlines-widget/views/admin.php:105
+msgid "terms and conditions."
 msgstr ""

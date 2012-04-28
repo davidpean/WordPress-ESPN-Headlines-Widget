@@ -101,4 +101,12 @@
                 }
                 ?>
         </fieldset>
+        <div>
+        	<?php
+        	echo _e("In order to use the ESPN API you must agree to their ", "espn_headlines");
+        	echo '<a href="http://developer.espn.com/terms" target="_new">';
+        	echo _e("terms and conditions.", "espn_headlines");
+        	echo '</a>';
+        	?>
+        </div>
 </div>

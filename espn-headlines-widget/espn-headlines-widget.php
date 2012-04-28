@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: ESPN Headlines Widget
-Description: Pulls in news by sport and team using the ESPN API
+Description: Display ESPN content by sport and league using the ESPN API
 Version: 0.1
 Author: David Pean
 Author URI: http://www.twitter.com/davidpean
@@ -38,7 +38,7 @@ class ESPN_Headlines_Widget extends WP_Widget{
 		
 		echo $before_widget;
     
-        	$widget_title = empty($instance['widget_title']) ? '' : apply_filters('widget_title', $instance['widget_title']);
+        $widget_title = empty($instance['widget_title']) ? '' : apply_filters('widget_title', $instance['widget_title']);
 
 		// Display the widget
 		include( plugin_dir_path(__FILE__) . '/views/widget.php' );
@@ -57,19 +57,19 @@ class ESPN_Headlines_Widget extends WP_Widget{
 		
 		$instance = $old_instance;
 		
-        	delete_transient( $this->cacheKey );
+        delete_transient( $this->cacheKey );
                 
 		$numberToShow = (int) $new_instance['widget_headlines_number'];
 		if ( numberToShow == 0 || ! $numberToShow = absint( $numberToShow ) ){
  			$number = 10;
  		}
  		
-        	$instance['widget_title'] = strip_tags($new_instance['widget_title']);
-        	$instance['widget_headlines_number'] = $numberToShow;
-        	$instance['widget_espn_apikey'] = strip_tags($new_instance['widget_espn_apikey']);
-        	$instance['widget_headlines_type'] = $new_instance['widget_headlines_type'];
-        	$instance['widget_headlines_filter'] = $new_instance['widget_headlines_filter'];
-        	$instance['widget_show_description'] = isset($new_instance['widget_show_description']);
+        $instance['widget_title'] = strip_tags($new_instance['widget_title']);
+        $instance['widget_headlines_number'] = $numberToShow;
+        $instance['widget_espn_apikey'] = strip_tags($new_instance['widget_espn_apikey']);
+        $instance['widget_headlines_type'] = $new_instance['widget_headlines_type'];
+        $instance['widget_headlines_filter'] = $new_instance['widget_headlines_filter'];
+        $instance['widget_show_description'] = isset($new_instance['widget_show_description']);
                 
 		return $instance;
 		
@@ -91,7 +91,7 @@ class ESPN_Headlines_Widget extends WP_Widget{
 		);
 	
 		// Display the admin form
-        	include( plugin_dir_path(__FILE__) . '/views/admin.php' );
+        include( plugin_dir_path(__FILE__) . '/views/admin.php' );
 		
 	} // end form
 
