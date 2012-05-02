@@ -14,19 +14,21 @@ $json = get_transient( $cacheKey );
 if( $json === false ){
     
     $limit = $instance['widget_headlines_number'];
-    
-    $response = wp_remote_get( $this->apiBaseURL . 'sports/' . $instance['widget_headlines_filter'] . '/news?apikey=' . $instance['widget_espn_apikey'] . '&limit=' . $limit);
- 
-    if( !is_wp_error( $response ) ) {
-        $json = json_decode(wp_remote_retrieve_body($response));
-
-        $cache = set_transient($cacheKey, $json, $cacheTTL);
-        
-        echo "<!--Getting from source-->";
+    $options = get_option('espn_headlines_options');
+    if( isset( $options['api_key'] ) ){
+	    $response = wp_remote_get( $this->apiBaseURL . 'sports/' . $instance['widget_headlines_filter'] . '/news?apikey=' . $options['api_key'] . '&limit=' . $limit);
+	 
+	    if( !is_wp_error( $response ) ) {
+	    
+	        $json = json_decode(wp_remote_retrieve_body($response));
+	
+	        $cache = set_transient($cacheKey, $json, $cacheTTL);
+	        
+	        echo "<!--Getting from source-->";
+	    }
     }
     
 }else{
-    
     echo '<!--Getting from cache-->';
 }
 

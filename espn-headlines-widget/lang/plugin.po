@@ -1,25 +1,25 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ESPN Headlines Widget .1\n"
-"POT-Creation-Date: 2012-04-27 18:11-0600\n"
+"POT-Creation-Date: 2012-05-01 18:11-0600\n"
 "Last-Translator: David Pean <david.pean@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Text in echo
-#: espn-headlines-widget/views/admin.php:56
+#: espn-headlines-widget/views/admin.php:70
 msgid "By sport / league"
 msgstr ""
 
 #. Text in echo
-#: espn-headlines-widget/views/admin.php:57
+#: espn-headlines-widget/views/admin.php:71
 msgid "By team"
 msgstr ""
 
 #. Text in echo
-#: espn-headlines-widget/views/admin.php:14
-msgid "ESPN API Key:"
+#: espn-headlines-widget/espn-headlines-widget.php:1
+msgid "ESPN Headlines Settings"
 msgstr ""
 
 #. Text in function
@@ -28,7 +28,12 @@ msgid "ESPN headlines by sports and league"
 msgstr ""
 
 #. Text in echo
-#: espn-headlines-widget/views/admin.php:105
+#: espn-headlines-widget/views/admin.php:21
+msgid "Enter the API Key on the settings page."
+msgstr ""
+
+#. Text in echo
+#: espn-headlines-widget/views/admin.php:123
 msgid "In order to use the ESPN API you must agree to their "
 msgstr ""
 
@@ -38,36 +43,52 @@ msgid "No headlines found"
 msgstr ""
 
 #. Text in echo
-#: espn-headlines-widget/views/admin.php:41
+#: espn-headlines-widget/views/admin.php:55
 msgid "Number of headlines to show:"
 msgstr ""
 
 #. Text in echo
-#: espn-headlines-widget/views/admin.php:18
+#: espn-headlines-widget/views/admin.php:21
+msgid "Once you obtain a key: "
+msgstr ""
+
+#. Text in echo
+#: espn-headlines-widget/espn-headlines-widget.php:1
 msgid "Please visit the ESPN Developer Center to request or retrieve your key and enter it below"
 msgstr ""
 
 #. Text in echo
-#: espn-headlines-widget/views/admin.php:66
+#: espn-headlines-widget/views/admin.php:21
+msgid "Please visit the ESPN Developer Center to request or retrieve your key."
+msgstr ""
+
+#. Text in echo
+#: espn-headlines-widget/views/admin.php:80
 msgid "Select:"
 msgstr ""
 
 #. Text in echo
-#: espn-headlines-widget/views/admin.php:18
+#: espn-headlines-widget/views/admin.php:21
+#: espn-headlines-widget/espn-headlines-widget.php:1
 msgid "This widget requires an ESPN API Key. "
 msgstr ""
 
 #. Text in echo
-#: espn-headlines-widget/views/admin.php:34
+#: espn-headlines-widget/views/admin.php:48
 msgid "Title:"
 msgstr ""
 
 #. Text in echo
-#: espn-headlines-widget/views/admin.php:50
+#: espn-headlines-widget/views/admin.php:64
 msgid "Type:"
 msgstr ""
 
 #. Text in echo
-#: espn-headlines-widget/views/admin.php:105
+#: espn-headlines-widget/espn-headlines-widget.php:1
+msgid "Valid API Key"
+msgstr ""
+
+#. Text in echo
+#: espn-headlines-widget/views/admin.php:123
 msgid "terms and conditions."
 msgstr ""
